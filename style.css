@@ -1,0 +1,188 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.canvas {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #C1FCF6;
+   width: 100vw;
+   height: 100vh;
+   z-index: -10;
+}
+
+.soldier1 {
+   position: absolute;
+   width: 18rem;
+   height: 32rem;
+   display: flex;
+   justify-content: center;
+}
+
+.head {
+   position: absolute;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 15rem;
+   height: 15rem;
+   border-radius: 100%;
+   background-color: #DD1454;
+   border-top: .4rem solid #000;
+   border-left: .4rem solid #000;
+   border-right: .4rem solid #000;
+}
+
+.mask {
+   position: absolute;
+   width: 11.5rem;
+   height: 13rem;
+   top: .5rem;
+   border-radius: 100%;
+   background-color: #000;
+}
+
+.mask::before {
+   content: "";
+   position: absolute;
+   width: 9.5rem;
+   height: 14rem;
+   border-radius: 100%;
+   background-color: transparent;
+   border-left: 1rem solid #000;
+   border-right: 1rem solid #000;
+}
+
+.mask::after {
+   content: "";
+   position: absolute;
+   width: .8rem;
+   height: 2rem;
+   top: 12.5rem;
+   left: 5.35rem;
+   background-color: #000;
+   z-index: 3;
+}
+
+.rank {
+   position: absolute;
+   left: 3.8rem;
+   top: 2rem;
+   width: 4rem;
+   height: 4rem;
+   background: transparent;
+   border: .6rem solid #fff;
+}
+
+.soldier--body {
+   position: absolute;
+   width: 12rem;
+   height: 11rem;
+   top: 14rem;
+   border-radius: 30%;
+   background-color: #DD1454;
+   display: flex;
+   justify-content: center;
+   z-index: -5;
+}
+
+.body--lines {
+   position: absolute;
+   width: .39rem;
+   height: 8rem;
+   top: 2rem;
+   left: .02rem;
+   background-color: #000;
+   border-radius: 30%;
+   box-shadow: 11.55rem 0 #000;
+}
+
+.body--lines::after {
+   content: "";
+   position: absolute;
+   width: 1.75rem;
+   height: .4rem;
+   top: 8.9rem;
+   left: 5.1rem;
+   background-color: #000;
+   z-index: 4;
+}
+
+.zip {
+   position: absolute;
+   top: -1rem;
+   width: .4rem;
+   height: 10rem;
+   background-color: #000;
+}
+
+.belt {
+   position: absolute;
+   top: 6rem;
+   width: 11.5rem;
+   height: 1rem;
+   background-color: #000;
+}
+
+.arms {
+   position: absolute;
+   display: flex;
+   justify-content: space-between;
+   width: 18rem;
+   height: 10rem;
+   top: 14rem;
+   z-index: -7;
+}
+
+.left--arm {
+   width: 8rem;
+   height: 9rem;
+   margin-left: .8rem;
+   border-radius: 40%;
+   background-color: #DD1454;
+   border: .4rem solid #000;
+}
+
+.right--arm {
+   width: 8rem;
+   height: 9rem;
+   margin-right: .8rem;
+   border-radius: 40%;
+   background-color: #DD1454;
+   border: .4rem solid #000;
+}
+
+.legs {
+   position: absolute;
+   display: flex;
+   justify-content: space-between;
+   width: 12rem;
+   height: 11rem;
+   top: 20rem;
+   z-index: -7;
+}
+
+.left--leg {
+   width: 5.5rem;
+   height: 11rem;
+   border-radius: 40%;
+   background-color: #DD1454;
+   border-left: .4rem solid #000;
+   border-right: .4rem solid #000;
+   border-bottom: .4rem solid #000;
+}
+
+.right--leg {
+   width: 5.5rem;
+   height: 11rem;
+   border-radius: 40%;
+   background-color: #DD1454;
+   border-left: .4rem solid #000;
+   border-right: .4rem solid #000;
+   border-bottom: .4rem solid #000;
+}
+
